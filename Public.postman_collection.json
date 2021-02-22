@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "43aad434-607f-4b75-8b16-29720ac70b4c",
+		"name": "Public",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cloudflare get record ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "API_KEY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.cloudflare.com/client/v4/zones/ZONE_ID/dns_records?name=DOMAIN_NAME",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cloudflare",
+						"com"
+					],
+					"path": [
+						"client",
+						"v4",
+						"zones",
+						"ZONE_ID",
+						"dns_records"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "DOMAIN_NAME"
+						}
+					]
+				},
+				"description": "Replace ZONE_ID with your zone id found on the Cloudflare Dashboard, Overview tab\r\nReplace YOUR_DOMAIN with your A domain\r\nReplace API_TOKEN with your API token"
+			},
+			"response": []
+		}
+	]
+}

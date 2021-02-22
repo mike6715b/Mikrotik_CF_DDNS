@@ -11,6 +11,7 @@
 #   on Overview tab scroll down                                         # 
 #   To obtain CFid use following command in any unix shell:             #
 #    curl -X GET "https://api.cloudflare.com/client/v4/zones/YOUR_ZONE_ID/dns_records?name=YOUR_DOMAIN" -H "Authorization:Bearer $CFtkn" -H "Content-Type: application/json" | python -mjson.tool
+# - You can use my Postman script to get those variables                #
 # - Enable CFDebug if needed - it'll print some info to logs            #
 # - Enable CFcloud if you don't get a public IP on interface            #
 # - Put script under /system scripts giving "read,write,ftp" policy access.       #
