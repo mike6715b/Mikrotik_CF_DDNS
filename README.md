@@ -6,3 +6,5 @@ Place the script under System > Scripts giving "read,write,ftp" policy access.
 Check that all the required variables are set properly.  
 Create a Schduled execution within System > Scheduler using the scripts name and set your interval.  
 
+## TODO
+Make a guide on how to use the Postman script
