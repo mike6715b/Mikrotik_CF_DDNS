@@ -56,6 +56,10 @@
 ################# Internal variables #################
 :local previousIP ""
 :global WANip ""
+
+################# Build CF API Url (v4) #################
+:local CFurl "https://api.cloudflare.com/client/v4/zones/"
+:set CFurl ($CFurl . "$CFzoneid/dns_records/$CFid");
  
 ################# Get or set previous IP-variables #################
 :if ($CFcloud = "true") do={
@@ -91,11 +95,6 @@
             }
     }
 }
-
-
-################# Build CF API Url (v4) #################
-:local CFurl "https://api.cloudflare.com/client/v4/zones/"
-:set CFurl ($CFurl . "$CFzoneid/dns_records/$CFid");
 
 ######## Write debug info to log #################
 :if ($CFDebug = "true") do={
