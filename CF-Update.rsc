@@ -51,7 +51,7 @@
 ########################  DO NOT EDIT BELOW  ############################
 #########################################################################
 
-:log info "Updating $CFDomain ..."
+:log info "Updating $CFdomain ..."
 
 ################# Internal variables #################
 :local previousIP ""
